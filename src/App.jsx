@@ -52,8 +52,8 @@ function App() {
   useEffect(() => {
     if (result.length < 10) {
       let intervalId = setInterval(() => {
-        setPause(!pause);
-      }, 30000);
+        setPause(!pause); 
+      }, 3000);
       return () => {
         clearInterval(intervalId);
       };
